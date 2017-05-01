@@ -1,0 +1,1 @@
+web: gunicorn FindMyFood.wsgi —-log-file-
