@@ -1,1 +1,1 @@
-web: gunicorn FindMyFood.wsgi —-log-file-
+web: gunicorn Assignment.wsgi —-log-file-
