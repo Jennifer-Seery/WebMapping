@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'FindMyFood',
     'rest_framework',
+    'corsheaders',
 
 ]
 
@@ -74,6 +75,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Assignment.wsgi.application'
 
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny'
+    ]
+}
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
@@ -122,6 +130,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
