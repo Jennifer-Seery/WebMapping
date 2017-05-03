@@ -18,6 +18,8 @@ from django.contrib import admin
 from rest_framework.urlpatterns import format_suffix_patterns
 from FindMyFood import views
 
+
+#Adding the links to the serialization of the data entered in the database.
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^users/', views.UsersList.as_view()),

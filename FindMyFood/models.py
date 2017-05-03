@@ -3,6 +3,7 @@ from django.db import models
 
 # Create your models here.
 
+#If a system was to be implemented this would be the model used
 class Users(models.Model):
     username = models.CharField(max_length=40)
     password = models.CharField(max_length=40)
@@ -13,6 +14,7 @@ class Users(models.Model):
     KFC = models.BooleanField()
 
 
+#model to hold all of the information about the locations of the restaurants
 class geoData(models.Model):
     restname = models.CharField(max_length=40)
     locations = models.CharField(max_length=40)

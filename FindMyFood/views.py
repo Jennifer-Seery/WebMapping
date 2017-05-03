@@ -7,6 +7,7 @@ from .models import geoData
 from .serializers import UsersSerializer
 from .serializers import GeoDBSerializer
 
+#Creating an API in a APIView for USER
 class UsersList(APIView):
     def get(self, request):
         users = Users.objects.all()
@@ -16,7 +17,7 @@ class UsersList(APIView):
     def post(self):
         pass
 
-
+#Creating a GeoDatabase Lists
 class GeoDBList(APIView):
     def get(self, request):
         geodb = geoData.objects.all()
